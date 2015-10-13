@@ -1,0 +1,54 @@
+﻿<html>
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+    <head>
+
+        <meta charset="utf-8">
+        <title>存储共享</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="assets/css/reset.css">
+        <link rel="stylesheet" href="assets/css/supersized.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+
+    </head>
+
+    <body>
+        <div class="page-container">
+            <h1>存储共享</h1>
+                <div>
+                    <label for="modeList">Access Mode</label>
+                    <select id="modeList">
+                        <option id="modeListOption0" value="0">By USB</option>
+                        <option id="modeListOption1" value="1">By Wi-Fi</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="permissionList">Permission</label>
+                    <select id="permissionList">
+                        <option id="LoginPermission0" value="0">Signed</option>
+                        <option id="LoginPermission1" value="1">Anonymous</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="usernameVal">Username</label>
+                    <input type="text" id="usernameVal">
+                </div>
+                <div>
+                    <label for="ageVal">Password</label>
+                    <input type="password" id="passwordVal">
+                </div>
+                <button id="saveButton">保存</button>
+        </div>
+        <script src="assets/js/html5.js"></script>
+        <script src="jquery-1.9.0.min.js"></script>
+        <script src="storageShare.js"></script>
+        <script src="assets/js/supersized.3.2.7.min.js" ></script>
+        <script src="assets/js/supersized-init.js" ></script>
+    </body>
+</html>
+
