@@ -1,0 +1,717 @@
+@import "variables.less";
+@import "mixins.less";
+@import "icon.less";
+
+.error-message {
+    float: left;
+    line-height: 34px;
+    color: @errMessage;
+    vertical-align: middle;
+}
+
+.dialUpSection, .createProfile {
+    > .content-group {
+        > .content-label {
+            width: 25%;
+        }
+    }
+    .warnSpan {
+        display: inline-block;
+        vertical-align: middle;
+        width: 310px;
+        color: red;
+        margin-left: 20px;
+    }
+    #create_err_message {
+        width: 60%;
+    }
+}
+
+.networkModeSection {
+    > .content-group {
+        > .content-label {
+            width: 19%;
+        }
+    }
+    .warnSpan {
+        display: inline-block;
+        vertical-align: middle;
+        color: red;
+        margin: 15px 0 0 120px;
+    }
+    #list_err_message {
+        margin-left: 60px;
+        width: 50%;
+    }
+}
+.pinManagementSection {
+    .content-group {
+        > .content-label {
+            width: 36.5%;
+        }
+        > .tipsSpan {
+            display: inline-block;
+            vertical-align: middle;
+            width: 100px;
+        }
+        .remainingNumber {
+            color: #e46666;
+            font-weight: bold;
+            padding: 4px;
+        }
+    }
+    .warn-text {
+        float: left;
+        color: @errMessage;
+    }
+}
+
+.ispUpdateSection {
+    .content-label {
+        width: 15%;
+    }
+    #ispFileLabel {
+        float: left;
+        vertical-align: middle;
+        margin-top: 10px;
+    }
+    #ispFileInput {
+        opacity:0;
+        filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+        cursor:pointer;
+        position:absolute;
+        left: 359px;
+        width: @btnWidth;
+        height: @btnHeight;
+    }
+}
+#updateISPTips {
+    color: red;
+    #ispUpdateLink {
+        color: #10ABE1;
+        text-decoration: underline;
+        outline: 0;
+        vertical-align: middle;
+    }
+}
+.wifiSettingsSection {
+    > .content-group {
+        > .content-label {
+            width: 34.5%;
+        }
+        > .tipsSpan {
+            display: inline-block;
+            vertical-align: middle;
+            width: 153px;
+        }
+    }
+}
+.wpsSection {
+    > .content-group {
+        > .content-label {
+            width: 16.5%;
+        }
+    }
+    .wpsConfig {
+        display: none;
+    }
+    #connectingImg {
+        vertical-align: middle;
+    }
+    #pinRadio {
+        position: static;
+    }
+}
+.blackListSection {
+    .checkbox-cell {
+        width: 8%;
+    }
+    .id-cell {
+        width: 10%;
+    }
+    .name-cell {
+        width: 50%;
+    }
+    .mac-cell {
+        width: 32%;
+    }
+    .name-content {
+        margin: auto;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+}
+
+.clientListSection {
+    .checkbox-cell {
+        width: 8%;
+    }
+    .name-cell {
+        width: 35%;
+    }
+    .mac-cell {
+        width: 30%;
+    }
+    .ip-cell {
+        width: 27%;
+    }
+    .name-content {
+        margin: auto;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+    }
+}
+.dataSettingSection {
+    > .content-group {
+        > .content-label {
+            width: 26%;
+        }
+        #usedDataSpan {
+            margin-right: 25px;
+        }
+    }
+    > .warn-message {
+        i {
+            background-color: #4E4E55;
+        }
+    }
+}
+.dhcpSection {
+    > .content-group {
+        > .content-label {
+            width: 25.5%;
+        }
+        > .tipsSpan {
+            display: inline-block;
+            vertical-align: middle;
+            width: 200px;
+        }
+    }
+}
+.dataSharingSection {
+    > .content-group {
+        > .content-label {
+            width: 19.5%;
+        }
+    }
+}
+#powerSaveSecCon {
+    > .content-group {
+        > .content-label {
+            width: 24%;
+        }
+    }
+}
+.updateSection {
+    #checkNewBtn {
+        width: 155px;
+    }
+    #newFirmwareSize {
+        margin: 0 5px;
+    }
+    a {
+        color: #10abe1;
+        text-decoration: underline;
+        outline: 0;
+        vertical-align: middle;
+    }
+    .popup {
+        max-width: 562px;
+        top: 30%;
+        left: 3%;
+        overflow-y: auto;
+    }
+    .progressPop {
+        width: 560px;
+        left: 0;
+    }
+    #releaseNotePopup {
+        height: 300px;
+        width: 562px;
+        overflow-y: hidden;
+
+        .separateLine {
+            margin: 10px -14px 0 20px;
+        }
+        #releaseContent {
+            overflow-y: auto;
+            height: 260px;
+            margin-right: -15px;
+        }
+    }
+    .titleContent {
+        font-size: 16px;
+        font-weight: bold;
+        margin: 10px 20px 20px;
+    }
+    .releaseItem {
+        margin: 15px 20px;
+        line-height: 20px;
+    }
+    #serverUpdatePopup {
+        width: 560px;
+        overflow-y: hidden;
+
+        #downloadSizeText {
+            position: absolute;
+            bottom: 110px;
+            right: 30px;
+        }
+        #rxSpeedDiv {
+            margin-top:10px;
+            float: left;
+        }
+        #serverProgressBar {
+            line-height: 110px;
+        }
+    }
+    #swUpdateFileInput {
+        opacity:0;
+        filter: progid:DXImageTransform.Microsoft.Alpha(opacity=0);
+        cursor:pointer;
+        position:absolute;
+        left: 295px;
+        width: @btnWidth;
+        height: @btnHeight;
+    }
+    .serverPart {
+        margin-left: 27px;
+    }
+    #updateForm {
+        margin-left: 50px;
+    }
+}
+.loginPwdSection {
+    > .content-group {
+        > .content-label {
+            width: 22%;
+        }
+        > .tipsSpan {
+            display: inline-block;
+            vertical-align: middle;
+            width: 220px;
+        }
+    }
+    > .separatorDiv {
+        height: 20px;
+    }
+    > .strengthIndex {
+        height: auto;
+
+        > .strengthBlock {
+            background-color: #b2b2b2;
+            width: 12%;
+            height: 12px;
+            -webkit-text-size-adjust: none;
+            font-weight: bold;
+            font-size: 10px;
+            text-align: center;
+            color: white;
+            display: inline-block;
+        }
+    }
+    [class*="icon-"] {
+        margin-right: 0;
+    }
+    > .warn-message{
+        margin-bottom: 35px;
+
+        label {
+            line-height: 20px;
+        }
+    }
+}
+.shutdownSection {
+    margin-top: 40px;
+
+    > .content-group {
+        > .content-label {
+            width: 25%;
+        }
+    }
+    .btnContent {
+        width: 300px;
+        margin: 0 auto;
+    }
+    .shutDownBtn{
+        display: inline-block;
+        background-color: @inputBackground;
+        border-bottom: 4px solid @inputBackground;
+        height: 111px;
+        width: 115px;
+        outline: 0;
+        i {
+            margin: 20px 40px;
+        }
+        span{
+            font-family: Arial;
+            font-size: 16px;
+            display: inline-block;
+            text-align: center;
+            width: 100%;
+        }
+        #rebootBtn, #restoreConfBtn{
+            color: @tipGreen;
+        }
+        #powerOffBtn {
+            color: #dd4040;
+        }
+    }
+    .restore {
+        margin-left: 265px;
+        &:hover,
+        &:focus {
+            border-bottom: 4px solid @tipGreen;
+        }
+    }
+    .reboot {
+        margin-left: 190px;
+        &:hover,
+        &:focus {
+            border-bottom: 4px solid @tipGreen;
+        }
+    }
+    .powerOff {
+        margin-left: 30px;
+        &:hover,
+        &:focus {
+            border-bottom: 4px solid #dd4040;
+        }
+    }
+}
+.timeSettingsSection {
+    > .content-group {
+        > .content-label {
+            width: 15%;
+        }
+        > #monthInput, #dateInput,
+          #hourInput, #minuteInput {
+            width: 35px;
+            margin-right: 4px;
+        }
+        > #yearInput, #secondInput{
+            width:50px;
+        }
+    }
+}
+.restoreConfSection {
+    > .content-group {
+        > .content-label {
+            width: 30.5%;
+        }
+    }
+}
+
+@logIDCell: 8%;
+@logTimeCell: 20%;
+@logTypeCell: 12%;
+@logLevelCell: 13%;
+@logContentCell: 100% - @logIDCell - @logTimeCell - @logTypeCell - @logLevelCell;
+
+.sysLogSection {
+    .id-cell {
+        width: @logIDCell;
+    }
+    .time-cell {
+        width: @logTimeCell;
+    }
+    .type-cell {
+        width: @logTypeCell;
+    }
+    .level-cell {
+        width: @logLevelCell;
+    }
+    .content-cell {
+        width: @logContentCell;
+    }
+    .log-content {
+        text-overflow: ellipsis;
+        overflow-x: hidden;
+    }
+    table {
+        margin-top: 12px;
+    }
+    > .content-group {
+        margin-left: 0;
+        #logTypeLbl, #logLevelLbl {
+            width: 75px;
+        }
+        .dropdown {
+            width: 100px;
+        }
+        .dropdown-menu>li {
+            padding: 5px 16px;
+        }
+    }
+    .mdlog {
+        display: inline-block;
+        width: 180px;
+        #mdLogLbl {
+            width: 80px;
+        }
+    }
+    .operation {
+        margin: 8px 0;
+    }
+    .pagination {
+        margin-top: 2px;
+    }
+    #downloadLogLink {
+        width: 70px;
+        height: 25px;
+        line-height: 25px;
+    }
+}
+#wifiRebootPopup, #restorePopup {
+    width: 330px;
+
+    .textContent {
+        margin: 30px 15px 20px 15px;
+
+        i {
+            float: left;
+        }
+
+    }
+
+    #wifiRebootOK {
+        width: 110px;
+    }
+}
+.suggestText {
+    color: #009CCF;
+}
+
+
+
+
+
+#backUpSection{
+
+    textarea[readonly], input[readonly] {
+        color: black;
+        cursor: default;
+    }
+
+    > #contentTextarea {
+        height: 200px;
+        margin-bottom: 20px;
+
+        > #contentLbl, > #nContentLbl {
+            vertical-align: top;
+            padding-top: 4px;
+            float: left;
+        }
+    }
+
+    > .content-group {
+        > .content-label {
+            width: 17%;
+        }
+        > #contentLblGroup {
+            display: inline-block;
+            vertical-align: top;
+            width:17%;
+            margin-right: 6px;
+            > .content-label {
+                width: 100%;
+            }
+        }
+        span {
+            vertical-align: middle;
+        }
+    }
+    .min-height {
+        height: auto;
+        margin-bottom: 0;
+        margin-top: 7px;
+    }
+
+    textarea {
+        height: 190px;
+        width: 360px;
+        resize: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+#newMessageSection, #msgDetailContent {
+
+    textarea[readonly], input[readonly] {
+        color: black;
+        cursor: default;
+    }
+
+    > #contentTextarea {
+        height: 200px;
+        margin-bottom: 20px;
+
+        > #contentLbl, > #nContentLbl {
+            vertical-align: top;
+            padding-top: 4px;
+            float: left;
+        }
+    }
+
+    > .content-group {
+        > .content-label {
+            width: 17%;
+        }
+        > #contentLblGroup {
+            display: inline-block;
+            vertical-align: top;
+            width:17%;
+            margin-right: 6px;
+            > .content-label {
+                width: 100%;
+            }
+        }
+        span {
+            vertical-align: middle;
+        }
+    }
+    .min-height {
+        height: auto;
+        margin-bottom: 0;
+        margin-top: 7px;
+    }
+
+    textarea {
+        height: 190px;
+        width: 360px;
+        resize: none;
+    }
+}
+.smsSettingsSection {
+    > .content-group {
+        > .content-label {
+            width: 27.5%;
+        }
+    }
+    > p {
+        padding-left: 5%;
+    }
+}
+@msgDetailBorder: 1px solid @grayLighter;
+.message-detail-form {
+    border: @msgDetailBorder;
+    padding: 0 25px;
+    clear: both;
+    .message-detail-info {
+        border-bottom: @msgDetailBorder;
+        position: relative;
+        vertical-align: middle;
+        line-height: 40px;
+        width: 100%;
+    }
+    .message-detail-from {
+        left: 0;
+        display: inline-block;
+    }
+    .message-detail-date {
+        position: absolute;
+        right: 0;
+        display: inline-block;
+    }
+    .message-detail-text {
+        padding: 20px 0;
+        line-height: 24px;
+        word-break: break-all;
+    }
+    #msgDetailNumber {
+        font-weight: bold;
+    }
+}
+#msgDetailContent {
+    display: none;
+    padding-top: 20px;
+}
+.prev-message {
+    cursor: pointer;
+    i {
+        .icon-prev-message;
+    }
+    &.disabled {
+        i {
+            .icon-prev-message-disabled;
+        }
+    }
+}
+.next-message {
+    cursor: pointer;
+    i {
+        .icon-next-message;
+    }
+    &.disabled {
+        i {
+            .icon-next-message-disabled;
+        }
+    }
+}
+
+
+#adv_panel-wrapper {
+ .sms-content {
+        padding: 0 15px 0 10px !important;
+        cursor: pointer;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}
+#sms_panel-wrapper {
+    .table {
+        th, td {
+            padding: 0;
+        }
+        width:100%;
+    }
+    .checkbox-cell {
+        width: 45px;
+    }
+    .status-cell {
+        width: 60px;
+    }
+    .number-cell {
+        width: 140px;
+    }
+    .time-cell {
+        width: 140px;
+    }
+    .content-cell {
+    }
+    .sms-content {
+        padding: 0 15px 0 10px !important;
+        cursor: pointer;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+    table i {
+        margin-right: auto;
+    }
+    span[class^=icon-] {
+        margin: 0 0 0 4px;
+    }
+    tr:hover td {
+        background-color: #edf9fc;
+        cursor: pointer;
+    }
+    .warn-text {
+        color: @errMessage;
+        display: inline-block;
+        width: 500px;
+        text-align: left;
+    }
+}
+
+
